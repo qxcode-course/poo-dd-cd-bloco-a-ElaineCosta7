@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-16_19-38-45",
+            "content": "@@ -1,37 +0,0 @@\n-print('minha toalha %C3%A9 amarela')%0Atowel\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-09-16_20-03-28",
+            "content": "@@ -24,8 +24,14 @@\n marela')\n+%0Atowel\n",
+            "lines": "2"
+        },
+        {
+            "label": "2025-09-16_20-03-40",
+            "content": "print('minha toalha \u00e9 amarela')",
+            "lines": "1"
+        }
+    ]
+}
