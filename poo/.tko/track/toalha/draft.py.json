@@ -12,8 +12,13 @@
         },
         {
             "label": "2025-09-16_20-03-40",
-            "content": "print('minha toalha \u00e9 amarela')",
+            "content": "@@ -28,248 +28,4 @@\n la')\n-%0A%0Aclass Towel:%0A    def __init__(self, color): #construtor%0A        self.color = 'yellow' #atributos%0A        self.size = 'm'%0A        self.wetness = 0%0A%0A#referencia%0Atowel = Towel() #objetos%0A%0Aprint(towel.color)%0Aprint(towel.size)%0Aprint(towel.wetness)\n",
             "lines": "1"
+        },
+        {
+            "label": "2025-09-18_01-03-00",
+            "content": "print('minha toalha \u00e9 amarela')\n\nclass Towel:\n    def __init__(self, color): #construtor\n        self.color = 'yellow' #atributos\n        self.size = 'm'\n        self.wetness = 0\n\n#referencia\ntowel = Towel() #objetos\n\nprint(towel.color)\nprint(towel.size)\nprint(towel.wetness)",
+            "lines": "14"
         }
     ]
 }

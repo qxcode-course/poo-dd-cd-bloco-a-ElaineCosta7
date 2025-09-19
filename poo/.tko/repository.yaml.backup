@@ -6,7 +6,10 @@ filter:
 version: 0.0.1
 database: database
 expanded:
+- bloco_b-primeiras-classes
+- bloco_a-configuração-de-ambiente
 - configuracao-e-aquecimento
+- bloco_a-práticas-com-o-git
 - campanha-principal
 tasks: {}
 flags:
