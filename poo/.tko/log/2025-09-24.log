@@ -1,0 +1,14 @@
+2025-09-24 02:48:12, MOVE, v:1, k:animal, mode:PICK
+2025-09-24 02:48:17, EXEC, v:1, k:animal, mode:FREE, size:17
+2025-09-24 03:51:50, EXEC, v:1, k:poo, mode:FREE, size:51
+2025-09-24 03:51:57, EXEC, v:1, k:poo, mode:FREE, size:51
+2025-09-24 03:53:27, MOVE, v:1, k:animal, mode:PICK
+2025-09-24 03:53:29, EXEC, v:1, k:animal, mode:FREE, size:37
+2025-09-24 04:24:39, MOVE, v:1, k:animal, mode:PICK
+2025-09-24 04:24:52, EXEC, v:1, k:animal, mode:FULL, rate:0, size:53
+2025-09-24 04:29:36, EXEC, v:1, k:animal, mode:FULL, rate:0, size:53
+2025-09-24 04:29:50, EXEC, v:1, k:animal, mode:FULL, rate:0
+2025-09-24 04:31:29, EXEC, v:1, k:animal, mode:FULL, rate:0, size:54
+2025-09-24 04:34:59, EXEC, v:1, k:animal, mode:FULL, rate:0, size:55
+2025-09-24 04:35:48, EXEC, v:1, k:animal, mode:FULL, rate:0, size:55
+2025-09-24 04:36:13, EXEC, v:1, k:animal, mode:FULL, rate:0, size:55
