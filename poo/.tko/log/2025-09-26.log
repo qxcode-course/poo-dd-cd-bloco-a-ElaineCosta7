@@ -1,0 +1,26 @@
+2025-09-26 01:53:13, MOVE, v:1, k:git_pratica, mode:PICK
+2025-09-26 01:53:18, EXEC, v:1, k:git_pratica, mode:FULL, rate:0
+2025-09-26 01:53:19, EXEC, v:1, k:git_pratica, mode:FULL, rate:0
+2025-09-26 01:53:20, EXEC, v:1, k:git_pratica, mode:FULL, rate:0
+2025-09-26 01:53:20, EXEC, v:1, k:git_pratica, mode:FULL, rate:0
+2025-09-26 01:53:21, EXEC, v:1, k:git_pratica, mode:FULL, rate:0
+2025-09-26 01:53:21, EXEC, v:1, k:git_pratica, mode:FULL, rate:0
+2025-09-26 01:53:22, EXEC, v:1, k:git_pratica, mode:FULL, rate:0
+2025-09-26 01:53:22, EXEC, v:1, k:git_pratica, mode:FULL, rate:0
+2025-09-26 01:53:22, EXEC, v:1, k:git_pratica, mode:FULL, rate:0
+2025-09-26 01:53:23, EXEC, v:1, k:git_pratica, mode:FULL, rate:0
+2025-09-26 01:53:23, EXEC, v:1, k:git_pratica, mode:FULL, rate:0
+2025-09-26 01:53:23, EXEC, v:1, k:git_pratica, mode:FULL, rate:0
+2025-09-26 01:53:24, EXEC, v:1, k:git_pratica, mode:FULL, rate:0
+2025-09-26 01:53:24, EXEC, v:1, k:git_pratica, mode:FULL, rate:0
+2025-09-26 01:53:24, EXEC, v:1, k:git_pratica, mode:FULL, rate:0
+2025-09-26 01:54:22, EXEC, v:1, k:git_pratica, mode:FULL, rate:100, size:1
+2025-09-26 02:07:55, MOVE, v:1, k:git_pratica, mode:PICK
+2025-09-26 02:08:32, EXEC, v:1, k:git_pratica, mode:FULL, rate:100
+2025-09-26 02:14:08, SELF, v:1, k:git_pratica, rate:100, human:amigos_namorado_discord, iagen:gpt, alone:4, study:240
+2025-09-26 02:20:09, MOVE, v:1, k:git_pratica, mode:PICK
+2025-09-26 02:20:10, EXEC, v:1, k:git_pratica, mode:FULL, rate:100, size:3
+2025-09-26 02:20:17, EXEC, v:1, k:git_pratica, mode:FULL, rate:0, size:3
+2025-09-26 02:20:30, EXEC, v:1, k:git_pratica, mode:FULL, rate:100, size:4
+2025-09-26 02:27:51, EXEC, v:1, k:git_pratica, mode:FULL, rate:0, size:8
+2025-09-26 02:28:58, EXEC, v:1, k:git_pratica, mode:FULL, rate:100, size:8

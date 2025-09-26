@@ -1,5 +1,3 @@
-print('minha toalha é amarela')
-
 class Towel:
     def __init__(self, color): #construtor
         self.color = 'yellow' #atributos

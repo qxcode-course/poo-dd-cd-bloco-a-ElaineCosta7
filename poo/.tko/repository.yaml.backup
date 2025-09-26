@@ -11,11 +11,12 @@ expanded:
 - configuracao-e-aquecimento
 - bloco_a-práticas-com-o-git
 - campanha-principal
-tasks: {}
+tasks:
+  git_pratica: '{rate:100, human:amigos_namorado_discord, iagen:gpt, alone:4, study:240}'
 flags:
   quests: 0
   tracks: 0
   tasks: 0
   graph: 0
   xray: 0
-index: animal
+index: git_pratica

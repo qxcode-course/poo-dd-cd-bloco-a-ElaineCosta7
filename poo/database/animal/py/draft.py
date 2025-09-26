@@ -4,7 +4,7 @@ class Animal:
         self.sound: str = sound
         self.age: int = 0
 
-    def ageBy(self, increment: int):
+    def ageBy(self, increment: int) -> int:
         self.age += increment
         if self.age == 0:
             return "filhote"
@@ -19,12 +19,12 @@ class Animal:
         elif self.age > 4:
             print(f"warning: {self.species} morreu")
 
-    def makeSound(self):
-        if self.age == 0:
+    def makeSound(self) -> str:
+        self.age == 0:
             return "---"
-        elif self.age == 4:
+        self.age == 4:
             return "RIP"
-        elif self.age == 1 or self.age == 2 or self.age ==3:
+        self.age == 1 or self.age == 2 or self.age ==3:
             return self.sound
 
     def __str__(self) -> str:
@@ -38,7 +38,6 @@ def main():
         print(f"${line}") # eco
         args: list[str] = line.split(" ")
         if args[0] == "end":
-            print(f"${line}") # eco
             break
         elif args[0] == "init":
             species = args[1]
@@ -52,4 +51,6 @@ def main():
         else:
             print("fail: comando inválido")
 
+
+main() 
 

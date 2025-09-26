@@ -2,8 +2,38 @@
     "patches": [
         {
             "label": "2025-09-18_01-12-30",
-            "content": "",
+            "content": "@@ -1,10 +0,0 @@\n-print('1')\n",
             "lines": "0"
+        },
+        {
+            "label": "2025-09-26_01-54-22",
+            "content": "@@ -1,6 +1,4 @@\n-%0A%0A\n prin\n",
+            "lines": "1"
+        },
+        {
+            "label": "2025-09-26_02-20-10",
+            "content": "@@ -1,12 +1,5 @@\n %0A\n-yyhhhuj\n %0Apri\n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-09-26_02-20-17",
+            "content": "@@ -1,15 +1,12 @@\n %0A\n-'\n yyhhhuj\n-'%0A\n %0Apri\n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-09-26_02-20-30",
+            "content": "@@ -1,394 +1,13 @@\n %0A'\n-Essa pratica permitiu que possamos conhecer as principais funcionalidades do git, %0Auma ferramenta essencial e bastante usada no contexto da programa%C3%A7%C3%A3o. %0ATambem come%C3%A7amos a migrar para o vs code local, n%C3%A3o muito explorado em FUP.%0AA maior dificuldade encontrada por mim foram sequencias de complica%C3%A7%C3%B5es e %0Aerros que tive ao configurar o git local e fazer commits para o repositorio remoto.\n+yyhhhuj\n '%0A%0Ap\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-09-26_02-27-51",
+            "content": "@@ -75,19 +75,19 @@\n s do git\n-'%0A'\n+, %0A\n uma ferr\n@@ -147,19 +147,18 @@\n rama%C3%A7%C3%A3o.\n-'%0A'\n+ %0A\n Tambem c\n@@ -224,19 +224,17 @@\n  em FUP.\n-'%0A'\n+%0A\n A maior \n@@ -302,11 +302,10 @@\n es e\n-'%0A'\n+ %0A\n erro\n",
+            "lines": "8"
+        },
+        {
+            "label": "2025-09-26_02-28-58",
+            "content": "\n'Essa pratica permitiu que possamos conhecer as principais funcionalidades do git'\n'uma ferramenta essencial e bastante usada no contexto da programa\u00e7\u00e3o.'\n'Tambem come\u00e7amos a migrar para o vs code local, n\u00e3o muito explorado em FUP.'\n'A maior dificuldade encontrada por mim foram sequencias de complica\u00e7\u00f5es e'\n'erros que tive ao configurar o git local e fazer commits para o repositorio remoto.'\n\nprint('1')",
+            "lines": "8"
         }
     ]
 }
