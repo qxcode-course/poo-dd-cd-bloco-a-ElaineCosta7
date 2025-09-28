@@ -15,6 +15,7 @@ tasks:
   chaves_ssh: '{rate:100, human:namorado_amigos_discord, guide:video, alone:3, study:120}'
   git_pratica: '{rate:100, human:amigos_namorado_discord, iagen:gpt, alone:4, study:240}'
   toalha: '{rate:100, guide:aula, alone:2, study:130}'
+  animal: '{human:professor, alone:7, study:300}'
   enxugar: '{rate:100, guide:aula, alone:2, study:30}'
 flags:
   quests: 0
@@ -22,4 +23,4 @@ flags:
   tasks: 0
   graph: 1
   xray: 0
-index: enxugar
+index: toalha
