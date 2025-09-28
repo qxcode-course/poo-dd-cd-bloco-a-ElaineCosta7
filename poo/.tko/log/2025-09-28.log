@@ -1,0 +1,17 @@
+2025-09-28 00:10:06, MOVE, v:1, k:enxugar, mode:PICK
+2025-09-28 00:10:08, EXEC, v:1, k:enxugar, mode:FULL, rate:0, size:54
+2025-09-28 00:10:09, EXEC, v:1, k:enxugar, mode:FULL, rate:0
+2025-09-28 00:14:22, EXEC, v:1, k:enxugar, mode:FULL, rate:0, size:57
+2025-09-28 00:18:54, EXEC, v:1, k:enxugar, mode:FULL, rate:0, size:57
+2025-09-28 00:18:58, EXEC, v:1, k:enxugar, mode:FULL, rate:0
+2025-09-28 00:19:13, EXEC, v:1, k:enxugar, mode:FULL, rate:0, size:57
+2025-09-28 00:19:26, EXEC, v:1, k:enxugar, mode:FULL, rate:40, size:57
+2025-09-28 00:19:39, EXEC, v:1, k:enxugar, mode:FULL, rate:0, size:57
+2025-09-28 00:19:43, EXEC, v:1, k:enxugar, mode:FULL, rate:90, size:57
+2025-09-28 00:22:50, EXEC, v:1, k:enxugar, mode:FULL, rate:90, size:59
+2025-09-28 00:24:51, EXEC, v:1, k:enxugar, mode:FULL, rate:100, size:59
+2025-09-28 00:25:13, MOVE, v:1, k:enxugar, mode:BACK
+2025-09-28 00:25:43, SELF, v:1, k:enxugar, rate:100, guide:aula, alone:2
+2025-09-28 00:26:01, MOVE, v:1, k:enxugar, mode:PICK
+2025-09-28 00:26:03, MOVE, v:1, k:enxugar, mode:BACK
+2025-09-28 00:26:13, SELF, v:1, k:enxugar, rate:100, guide:aula, alone:2, study:30

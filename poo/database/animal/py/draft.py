@@ -4,23 +4,27 @@ class Animal:
         self.sound: str = sound
         self.age: int = 0
 
-    def ageBy(self, increment: int) -> int:
+    def ageBy(self, increment: int) -> none:
         self.age += increment
+
+
+    def lifeStage(self) -> none:
         if self.age == 0:
             return "filhote"
-        elif self.age == 1:
+        if self.age == 1:
             return "criança"
-        elif self.age == 2:
+        if self.age == 2:
             return "adulta"
-        elif self.age == 3:
+        if self.age == 3:
             return "idoso"
-        elif self.age == 4:
+        if self.age == 4:
             return "morto"
-        elif self.age > 4:
+        if self.age > 4:
             print(f"warning: {self.species} morreu")
 
+
     def makeSound(self) -> str:
-        self.age == 0:
+        self.age == 0
             return "---"
         self.age == 4:
             return "RIP"

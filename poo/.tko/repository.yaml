@@ -6,17 +6,20 @@ filter:
 version: 0.0.1
 database: database
 expanded:
-- bloco_b-primeiras-classes
 - bloco_a-configuração-de-ambiente
-- configuracao-e-aquecimento
 - bloco_a-práticas-com-o-git
+- configuracao-e-aquecimento
 - campanha-principal
+- bloco_b-primeiras-classes
 tasks:
+  chaves_ssh: '{rate:100, human:namorado_amigos_discord, guide:video, alone:3, study:120}'
   git_pratica: '{rate:100, human:amigos_namorado_discord, iagen:gpt, alone:4, study:240}'
+  toalha: '{rate:100, guide:aula, alone:2, study:130}'
+  enxugar: '{rate:100, guide:aula, alone:2, study:30}'
 flags:
   quests: 0
   tracks: 0
   tasks: 0
-  graph: 0
+  graph: 1
   xray: 0
-index: git_pratica
+index: enxugar

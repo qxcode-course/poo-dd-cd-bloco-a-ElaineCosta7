@@ -24,3 +24,18 @@
 2025-09-26 02:20:30, EXEC, v:1, k:git_pratica, mode:FULL, rate:100, size:4
 2025-09-26 02:27:51, EXEC, v:1, k:git_pratica, mode:FULL, rate:0, size:8
 2025-09-26 02:28:58, EXEC, v:1, k:git_pratica, mode:FULL, rate:100, size:8
+2025-09-26 02:41:14, SELF, v:1, k:chaves_ssh, rate:30
+2025-09-26 02:45:32, SELF, v:1, k:chaves_ssh, rate:90, human:namorado_amigos_discord, guide:OpenCodigo_erropython, alone:3, study:120
+2025-09-26 02:50:38, SELF, v:1, k:chaves_ssh, rate:100, human:namorado_amigos_discord, guide:video, alone:3, study:120
+2025-09-26 02:51:08, SELF, v:1, k:git_pratica, rate:100, human:amigos_namorado_discord, iagen:gpt, alone:4, study:240
+2025-09-26 02:51:09, MOVE, v:1, k:git_pratica, mode:PICK
+2025-09-26 02:51:11, MOVE, v:1, k:git_pratica, mode:BACK
+2025-09-26 02:54:47, MOVE, v:1, k:toalha, mode:PICK
+2025-09-26 02:54:52, EXEC, v:1, k:toalha, mode:FREE, size:12
+2025-09-26 02:55:03, MOVE, v:1, k:toalha, mode:PICK
+2025-09-26 02:55:05, EXEC, v:1, k:toalha, mode:LOCK, rate:0
+2025-09-26 02:55:07, EXEC, v:1, k:toalha, mode:LOCK, rate:0
+2025-09-26 03:01:00, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:18
+2025-09-26 03:44:10, MOVE, v:1, k:animal, mode:PICK
+2025-09-26 03:44:13, EXEC, v:1, k:animal, mode:FREE, size:60
+2025-09-26 03:51:51, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:27
