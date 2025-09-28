@@ -8,20 +8,8 @@ class Animal:
         if self.age < 4:
             self.age += increment
             if self.age > 4:
-                self.age + 4
-        
-        if self.age == 0:
-            return "filhote"
-        elif self.age == 1:
-            return "criança"
-        elif self.age == 2:
-            return "adulto"
-        elif self.age == 3:
-            return "idoso"
-        elif self.age == 4:
-            return "morto"
-        elif self.age >= 4:
-            print(f"warning: {self.species} morreu")
+                print(f"warning: {self.species} morreu")
+                self.age = 4
 
     def makeSound(self) -> str:
         if self.age == 0:

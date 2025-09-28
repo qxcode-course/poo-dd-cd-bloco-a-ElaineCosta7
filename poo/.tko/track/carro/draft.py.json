@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-28_03-15-27",
+            "content": "@@ -1,224 +0,0 @@\n-class Carro:%0A    def __init__(self, pass: int, gas: int, km: int):%0A        self.pass = 0%0A        self.gas = 0%0A        self.km = 0%0A%0A%0A%0Adef __str__(self) -%3E str:%0A    print(f%22pass: %7Bself.pass%7D, gas: %7Bself.gas%7D, km: %7Bself.km%7D%22)%0A%0A\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-09-28_03-29-02",
+            "content": "@@ -32,16 +32,17 @@\n elf, pas\n+s\n : int, g\n@@ -76,16 +76,17 @@\n self.pas\n+s\n  = 0%0A   \n@@ -128,403 +128,8 @@\n  0%0A%0A\n-    def passMax(self, increment: int) -%3E None:%0A        if self.pas %3C 2:%0A            self.pas += increment%0A        if self.pas %3E 2:%0A            self.pas = 2%0A            print(%22fail: limite de pessoas atingido%22)%0A%0A    def gasMax(self, increment: int) -%3E None:%0A        if self.gas %3C 100:%0A            self.gas += increment%0A        if self.gas %3E 100:%0A            self.pas = 100%0A            #print(%22%22)%0A\n %0A%0Ade\n@@ -179,16 +179,17 @@\n self.pas\n+s\n %7D, gas: \n@@ -221,765 +221,4 @@\n %22)%0A%0A\n-def main():%0A    carro = Carro(%22%22, %22%22, %22%22)%0A    while True:%0A        line: str = input()%0A        print(%22$%22 + line)%0A        args: list%5Bstr%5D = line.split(%22 %22)%0A        if args%5B0%5D == %22end%22:%0A            break%0A        if args%5B0%5D == %22show%22:%0A            print(carro)%0A        if args%5B0%5D == %22enter%22:%0A            increment: int = int(args%5B1%5D)%0A            carro.passMax(increment)%0A            if carro.pas == 2:%0A                print(f%22fail: limite de pessoas atingido%22)%0A        if args%5B0%5D == %22leave%22:%0A            carro.passMax(- increment)%0A            if carro.pas == 0:%0A                print(f%22fail: nao ha ninguem no carro%22)%0A        #if args%5B0%5D == %22fuel increment%22:%0A        #if args%5B0%5D == %22drive distance%22:%0A        else:%0A            print(%22fail: comando invalido%22)%0Amain()%0A%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2025-09-28_04-21-11",
+            "content": "@@ -335,58 +335,8 @@\n do%22)\n-%0A        if self.pas %3C 0:%0A            self.pas = 0\n %0A%0A  \n@@ -1114,32 +1114,34 @@\n   carro.passMax(\n+- \n increment)%0A     \n@@ -1127,32 +1127,32 @@\n ax(- increment)%0A\n-\n             if c\n@@ -1222,32 +1222,33 @@\n carro%22)%0A        \n+#\n if args%5B0%5D == %22f\n@@ -1275,309 +1275,40 @@\n     \n-    carro.gasMax(increment)%0A            if carro.pas == 100:%0A                print(%22tanque cheio%22)%0A        if args%5B0%5D == %22drive distance%22:%0A            if carro.pas == 0:%0A                print(f%22fail: nao ha ninguem no carro%22)%0A            if carro.gas == 0:%0A                print(f%22fail: tanque vazio%22)\n+#if args%5B0%5D == %22drive distance%22:\n %0A   \n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-09-28_04-36-15",
+            "content": "class Carro:\n    def __init__(self, pas: int, gas: int, km: int):\n        self.pas = 0\n        self.gas = 0\n        self.km = 0\n\n    def passMax(self, increment: int) -> None:\n        if self.pas < 2:\n            self.pas += increment\n        if self.pas > 2:\n            self.pas = 2\n            print(\"fail: limite de pessoas atingido\")\n        if self.pas < 0:\n            self.pas = 0\n\n    def gasMax(self, increment: int) -> None:\n        if self.gas < 100:\n            self.gas += increment\n        if self.gas > 100:\n            self.pas = 100\n            #print(\"\")\n\n\ndef __str__(self) -> str:\n    print(f\"pass: {self.pas}, gas: {self.gas}, km: {self.km}\")\n\ndef main():\n    carro = Carro(\"\", \"\", \"\")\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        if args[0] == \"show\":\n            print(carro)\n        if args[0] == \"enter\":\n            increment: int = int(args[1])\n            carro.passMax(increment)\n            if carro.pas == 2:\n                print(f\"fail: limite de pessoas atingido\")\n        if args[0] == \"leave\":\n            carro.passMax(increment)\n            if carro.pas == 0:\n                print(f\"fail: nao ha ninguem no carro\")\n        if args[0] == \"fuel increment\":\n            carro.gasMax(increment)\n            if carro.pas == 100:\n                print(\"tanque cheio\")\n        if args[0] == \"drive distance\":\n            if carro.pas == 0:\n                print(f\"fail: nao ha ninguem no carro\")\n            if carro.gas == 0:\n                print(f\"fail: tanque vazio\")\n        else:\n            print(\"fail: comando invalido\")\nmain()\n\n",
+            "lines": "58"
+        }
+    ]
+}
