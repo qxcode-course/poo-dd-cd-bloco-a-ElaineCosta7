@@ -17,8 +17,358 @@
         },
         {
             "label": "2025-09-28_04-36-15",
-            "content": "class Carro:\n    def __init__(self, pas: int, gas: int, km: int):\n        self.pas = 0\n        self.gas = 0\n        self.km = 0\n\n    def passMax(self, increment: int) -> None:\n        if self.pas < 2:\n            self.pas += increment\n        if self.pas > 2:\n            self.pas = 2\n            print(\"fail: limite de pessoas atingido\")\n        if self.pas < 0:\n            self.pas = 0\n\n    def gasMax(self, increment: int) -> None:\n        if self.gas < 100:\n            self.gas += increment\n        if self.gas > 100:\n            self.pas = 100\n            #print(\"\")\n\n\ndef __str__(self) -> str:\n    print(f\"pass: {self.pas}, gas: {self.gas}, km: {self.km}\")\n\ndef main():\n    carro = Carro(\"\", \"\", \"\")\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        if args[0] == \"show\":\n            print(carro)\n        if args[0] == \"enter\":\n            increment: int = int(args[1])\n            carro.passMax(increment)\n            if carro.pas == 2:\n                print(f\"fail: limite de pessoas atingido\")\n        if args[0] == \"leave\":\n            carro.passMax(increment)\n            if carro.pas == 0:\n                print(f\"fail: nao ha ninguem no carro\")\n        if args[0] == \"fuel increment\":\n            carro.gasMax(increment)\n            if carro.pas == 100:\n                print(\"tanque cheio\")\n        if args[0] == \"drive distance\":\n            if carro.pas == 0:\n                print(f\"fail: nao ha ninguem no carro\")\n            if carro.gas == 0:\n                print(f\"fail: tanque vazio\")\n        else:\n            print(\"fail: comando invalido\")\nmain()\n\n",
+            "content": "@@ -603,15 +603,14 @@\n     \n-return \n+print(\n f%22pa\n@@ -656,16 +656,17 @@\n elf.km%7D%22\n+)\n %0A%0Adef ma\n",
             "lines": "58"
+        },
+        {
+            "label": "2025-09-28_18-38-51",
+            "content": "@@ -689,16 +689,26 @@\n = Carro(\n+%22%22, %22%22, %22%22\n )%0A    wh\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-09-28_18-48-46",
+            "content": "@@ -693,15 +693,8 @@\n rro(\n-0, 0, 0\n )%0A  \n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-09-28_18-49-03",
+            "content": "@@ -569,20 +569,16 @@\n t(%22%22)%0A%0A%0A\n-    \n def __st\n@@ -689,16 +689,23 @@\n = Carro(\n+0, 0, 0\n )%0A    wh\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-09-28_18-51-13",
+            "content": "@@ -599,20 +599,16 @@\n -%3E str:%0A\n-    \n     retu\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-09-28_18-51-23",
+            "content": "@@ -701,18 +701,8 @@\n rro(\n-%22%22, %22%22, %22%22\n )%0A  \n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-09-28_18-51-48",
+            "content": "@@ -868,34 +868,32 @@\n   break%0A        \n-el\n if args%5B0%5D == %22s\n@@ -898,16 +898,16 @@\n %22show%22:%0A\n+\n         \n@@ -923,34 +923,32 @@\n (carro)%0A        \n-el\n if args%5B0%5D == %22e\n@@ -1123,34 +1123,32 @@\n ngido%22)%0A        \n-el\n if args%5B0%5D == %22l\n@@ -1278,34 +1278,32 @@\n carro%22)%0A        \n-el\n if args%5B0%5D == %22f\n@@ -1425,24 +1425,24 @@\n cheio%22)%0A\n+\n         \n elif arg\n@@ -1433,18 +1433,16 @@\n         \n-el\n if args%5B\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-09-28_18-55-18",
+            "content": "@@ -1030,10 +1030,8 @@\n Max(\n-- \n incr\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-09-28_18-59-23",
+            "content": "@@ -1027,16 +1027,17 @@\n assMax(-\n+ \n incremen\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-09-28_18-59-32",
+            "content": "@@ -1018,32 +1018,33 @@\n   carro.passMax(\n+-\n increment)%0A     \n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-09-28_18-59-42",
+            "content": "@@ -958,16 +958,58 @@\n enter%22:%0A\n+            increment: int = int(args%5B1%5D)%0A\n         \n@@ -1026,17 +1026,25 @@\n passMax(\n-1\n+increment\n )%0A      \n@@ -1190,10 +1190,17 @@\n Max(\n--1\n+increment\n )%0A  \n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-09-28_19-02-40",
+            "content": "@@ -1012,17 +1012,17 @@\n rro.pas \n-%3E\n+=\n = 2:%0A   \n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-09-28_19-04-00",
+            "content": "@@ -278,16 +278,70 @@\n pas = 2%0A\n+            print(%22fail: limite de pessoas atingido%22)%0A\n         \n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-09-28_19-04-36",
+            "content": "@@ -958,17 +958,17 @@\n rro.pas \n-=\n+%3E\n = 2:%0A   \n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-09-28_19-06-01",
+            "content": "@@ -954,25 +954,26 @@\n f carro.pas \n-%3E\n+==\n  2:%0A        \n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-09-28_19-06-22",
+            "content": "@@ -161,32 +161,61 @@\n : int) -%3E None:%0A\n+        if self.pas %3C 2:%0A    \n         self.pas\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-09-28_19-10-18",
+            "content": "@@ -253,63 +253,8 @@\n = 2%0A\n-            print(f%22fail: limite de pessoas atingido%22)%0A\n     \n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-09-28_19-11-13",
+            "content": "@@ -357,60 +357,8 @@\n  = 0\n-%0A            print(f%22fail: nao ha ninguem no carro%22)\n %0A%0A  \n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-09-28_19-11-43",
+            "content": "@@ -1186,32 +1186,88 @@\n carro.pas == 0:%0A\n+                print(f%22fail: nao ha ninguem no carro%22)%0A\n         elif arg\n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-09-29_00-25-45",
+            "content": "@@ -1163,16 +1163,47 @@\n Max(-1)%0A\n+            if carro.pas == 0:%0A\n         \n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-09-29_00-26-28",
+            "content": "@@ -1011,16 +1011,105 @@\n sMax(1)%0A\n+            if carro.pas %3E 2:%0A                print(f%22fail: limite de pessoas atingido%22)%0A\n         \n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-09-29_00-26-54",
+            "content": "@@ -1103,16 +1103,26 @@\n == %22fuel\n+ increment\n %22:%0A     \n@@ -1253,16 +1253,25 @@\n = %22drive\n+ distance\n %22:%0A     \n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-09-29_00-36-57",
+            "content": "@@ -1110,50 +1110,8 @@\n l%22:%0A\n-            increment: int = int(args%5B1%5D)%0A\n     \n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-09-29_00-39-18",
+            "content": "@@ -1292,52 +1292,8 @@\n e%22:%0A\n-            while gas %3E 0%0A            km +=%0A\n     \n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-09-29_00-48-36",
+            "content": "@@ -1313,17 +1313,16 @@\n  gas %3E 0\n-:\n %0A       \n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-09-29_00-48-44",
+            "content": "@@ -1327,22 +1327,16 @@\n         \n-carro.\n km +=%0A  \n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-09-29_00-48-57",
+            "content": "@@ -1323,28 +1323,24 @@\n             \n-    \n carro.km +=%0A\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-09-29_00-49-15",
+            "content": "@@ -1345,24 +1345,9 @@\n km +\n- and carro.gas -\n+=\n %0A   \n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-09-29_00-49-38",
+            "content": "@@ -1345,25 +1345,12 @@\n km +\n-=%0A               \n+ and\n  car\n@@ -1357,17 +1357,16 @@\n ro.gas -\n-=\n %0A       \n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-09-29_00-50-27",
+            "content": "@@ -1306,22 +1306,16 @@\n   while \n-carro.\n gas %3E 0:\n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-09-29_00-51-56",
+            "content": "@@ -1348,18 +1348,16 @@\n ro.km +=\n- 1\n %0A       \n@@ -1377,18 +1377,16 @@\n o.gas -=\n- 1\n %0A       \n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-09-29_00-52-09",
+            "content": "@@ -1481,18 +1481,16 @@\n         \n-el\n if carro\n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-09-29_01-05-49",
+            "content": "@@ -1304,27 +1304,89 @@\n     \n-dist = int(args%5B1%5D)\n+while carro.gas %3E 0:%0A                carro.km += 1%0A                carro.gas -= 1\n %0A   \n@@ -1551,140 +1551,8 @@\n o%22)%0A\n-            else:%0A                if%0A                %0A                carro.km += 1%0A                carro.gas -= 1%0A                %0A\n     \n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-09-29_01-17-53",
+            "content": "@@ -1495,32 +1495,51 @@\n           else:%0A\n+                if%0A\n                 \n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-09-29_01-18-04",
+            "content": "@@ -1523,27 +1523,8 @@\n     \n-if carro.gas %3C dist\n %0A   \n@@ -1547,16 +1547,34 @@\n ro.km +=\n+ 1%0A               \n  carro.g\n@@ -1575,16 +1575,21 @@\n arro.gas\n+ -= 1\n %0A       \n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-09-29_01-19-23",
+            "content": "@@ -1538,17 +1538,16 @@\n s %3C dist\n-:\n %0A       \n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-09-29_01-19-30",
+            "content": "@@ -1552,28 +1552,24 @@\n             \n-    \n carro.km += \n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-09-29_01-19-45",
+            "content": "@@ -1586,42 +1586,8 @@\n gas%0A\n-                    carro.gas = 0%0A\n     \n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-09-29_01-20-47",
+            "content": "@@ -1636,88 +1636,8 @@\n     \n-else:%0A                    carro.km += dist%0A                    carro.gas -= dist\n %0A   \n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-09-29_01-21-49",
+            "content": "@@ -1620,76 +1620,8 @@\n = 0%0A\n-                    print(fail: tanque vazio apos andar %7Bcarro.km%7D)%0A\n     \n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-09-29_01-22-41",
+            "content": "@@ -1638,25 +1638,24 @@\n       print(\n-%22\n fail: tanque\n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-09-29_01-22-51",
+            "content": "@@ -1634,33 +1634,32 @@\n           print(\n-f\n %22fail: tanque va\n@@ -1683,17 +1683,16 @@\n arro.km%7D\n-%22\n )%0A      \n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-09-29_01-22-59",
+            "content": "@@ -1687,13 +1687,8 @@\n o.km\n- + km\n %7D%22)%0A\n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-09-29_01-23-13",
+            "content": "@@ -1687,14 +1687,14 @@\n o.km\n-%7D\n  + km\n+%7D\n %22)%0A \n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-09-29_01-23-27",
+            "content": "@@ -1688,13 +1688,11 @@\n .km%7D\n-%22\n  + \n-%22\n km%22)\n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-09-29_01-23-44",
+            "content": "@@ -1689,17 +1689,16 @@\n km%7D%22 + %22\n- \n km%22)%0A   \n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-09-29_01-23-51",
+            "content": "@@ -1675,20 +1675,24 @@\n  andar %7B\n-dist\n+carro.km\n %7D%22 + %22 k\n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-09-29_01-25-33",
+            "content": "@@ -1683,19 +1683,8 @@\n dist\n- - carro.km\n %7D%22 +\n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-09-29_01-25-54",
+            "content": "@@ -1675,24 +1675,31 @@\n  andar %7B\n+dist - \n carro.km\n  - dist%7D\n@@ -1694,15 +1694,8 @@\n o.km\n- - dist\n %7D%22 +\n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-09-29_01-26-11",
+            "content": "@@ -1685,17 +1685,16 @@\n rro.km -\n-=\n  dist%7D%22 \n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-09-29_01-27-03",
+            "content": "@@ -1685,16 +1685,17 @@\n rro.km -\n+=\n  dist%7D%22 \n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-09-29_01-27-09",
+            "content": "@@ -1803,94 +1803,8 @@\n ist%0A\n-                    print(f%22fail: tanque vazio apos andar %7Bcarro.km - dist%7D%22 + %22 km%22)%0A\n     \n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-09-29_01-28-15",
+            "content": "@@ -1803,42 +1803,8 @@\n ist%0A\n-                    carro.gas = 0%0A\n     \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-09-29_01-28-41",
+            "content": "@@ -1720,18 +1720,18 @@\n       el\n-if\n+se\n :%0A      \n@@ -1833,38 +1833,16 @@\n gas = 0%0A\n-                else:%0A\n         \n",
+            "lines": "65"
+        },
+        {
+            "label": "2025-09-29_01-29-00",
+            "content": "@@ -1712,34 +1712,34 @@\n               el\n-se\n+if\n :%0A              \n@@ -1795,24 +1795,166 @@\n gas -= dist%0A\n+                    carro.gas = 0%0A                else:%0A                    print(f%22fail: tanque vazio apos andar %7Bcarro.km - dist%7D%22 + %22 km%22)%0A\n         else\n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-09-29_01-29-32",
+            "content": "@@ -1683,16 +1683,23 @@\n carro.km\n+ - dist\n %7D%22 + %22 k\n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-09-29_01-29-42",
+            "content": "@@ -1544,51 +1544,8 @@\n st:%0A\n-                    percorrido = carro.gas%0A\n     \n@@ -1679,18 +1679,16 @@\n ar %7B\n-percorrido\n+carro.km\n %7D%22 +\n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-09-29_01-32-01",
+            "content": "@@ -1560,26 +1560,27 @@\n         \n-carro.km +\n+percorrido \n = carro.\n@@ -1599,35 +1599,34 @@\n             \n-percorrido \n+carro.km +\n = carro.gas%0A\n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-09-29_01-32-59",
+            "content": "@@ -1534,24 +1534,20 @@\n o.gas %3C \n-carro.km\n+dist\n :%0A      \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-09-29_01-34-30",
+            "content": "@@ -1534,20 +1534,24 @@\n o.gas %3C \n-dist\n+carro.km\n :%0A      \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-09-29_01-34-59",
+            "content": "@@ -1534,24 +1534,20 @@\n o.gas %3C \n-carro.km\n+dist\n :%0A      \n@@ -1794,24 +1794,20 @@\n o.km += \n-carro.km\n+dist\n %0A       \n@@ -1832,24 +1832,20 @@\n .gas -= \n-carro.km\n+dist\n %0A       \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-09-29_01-35-44",
+            "content": "@@ -1534,20 +1534,24 @@\n o.gas %3C \n-dist\n+carro.km\n :%0A      \n@@ -1722,25 +1722,26 @@\n  andar %7B\n-carro.gas\n+percorrido\n %7D%22 + %22 k\n@@ -1798,20 +1798,24 @@\n o.km += \n-dist\n+carro.km\n %0A       \n@@ -1840,20 +1840,24 @@\n .gas -= \n-dist\n+carro.km\n %0A       \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-09-29_01-38-17",
+            "content": "@@ -1718,26 +1718,25 @@\n  andar %7B\n-percorrido\n+carro.gas\n %7D%22 + %22 k\n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-09-29_01-38-30",
+            "content": "@@ -1201,25 +1201,25 @@\n    if carro.\n-g\n+p\n as == 100:%0A \n@@ -1233,18 +1233,37 @@\n         \n-ca\n+print(%22tanque cheio%22)\n %0A       \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-09-29_01-39-52",
+            "content": "@@ -1188,32 +1188,35 @@\n nt)%0A            \n+if \n carro.gas == 100\n@@ -1213,24 +1213,43 @@\n gas == 100:%0A\n+                ca%0A\n         elif\n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-09-29_01-40-38",
+            "content": "@@ -1208,24 +1208,25 @@\n o.gas == 100\n+:\n %0A        eli\n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-09-29_01-40-49",
+            "content": "@@ -1184,16 +1184,45 @@\n rement)%0A\n+            carro.gas == 100%0A\n         \n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-09-29_01-41-12",
+            "content": "@@ -554,25 +554,25 @@\n        self.\n-g\n+p\n as = 100%0A   \n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-09-29_01-41-38",
+            "content": "@@ -57,16 +57,17 @@\n km: int)\n+:\n %0A       \n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-09-29_01-44-09",
+            "content": "@@ -57,17 +57,16 @@\n km: int)\n-:\n %0A       \n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-09-29_01-44-15",
+            "content": "class Carro:\n    def __init__(self, pas: int, gas: int, km: int):\n        self.pas = 0\n        self.gas = 0\n        self.km = 0\n\n    def passMax(self, increment: int) -> None:\n        self.pas += increment\n        if self.pas > 2:\n            self.pas = 2\n            print(f\"fail: limite de pessoas atingido\")\n        if self.pas < 0:\n            self.pas = 0\n            print(f\"fail: nao ha ninguem no carro\")\n\n    def gasMax(self, increment: int) -> None:\n        if self.gas < 100:\n            self.gas += increment\n        if self.gas > 100:\n            self.gas = 100\n            #print(\"\")\n\n\n    def __str__(self) -> str:\n        return f\"pass: {self.pas}, gas: {self.gas}, km: {self.km}\"\n\ndef main():\n    carro = Carro(\"\", \"\", \"\")\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(carro)\n        elif args[0] == \"enter\":\n            carro.passMax(1)\n        elif args[0] == \"leave\":\n            carro.passMax(-1)\n        elif args[0] == \"fuel\":\n            increment: int = int(args[1])\n            carro.gasMax(increment)\n        elif args[0] == \"drive\":\n            dist = int(args[1])\n            if carro.pas == 0:\n                print(f\"fail: nao ha ninguem no carro\")\n            elif carro.gas == 0:\n                print(f\"fail: tanque vazio\")\n            else:\n                if carro.gas < dist:\n                    carro.km += carro.gas\n                    percorrido = carro.gas\n                    carro.gas = 0\n                    print(f\"fail: tanque vazio apos andar {percorrido}\" + \" km\")\n                else:\n                    carro.km += dist\n                    carro.gas -= dist\n        else:\n            print(\"fail: comando invalido\")\nmain()\n\n",
+            "lines": "62"
         }
     ]
 }
