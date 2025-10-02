@@ -55,6 +55,7 @@ def main(): # 2. tranforma o código em algo interativo ao usuário
             toalha.dry(amount) # indica quanto secar
         else:
             print("fail: comando inválido") # 7. caso o comando seja qualquer outro não existente
+            
 
 
 

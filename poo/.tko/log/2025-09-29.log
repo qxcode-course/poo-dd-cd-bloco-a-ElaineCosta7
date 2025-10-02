@@ -66,3 +66,26 @@
 2025-09-29 01:44:15, EXEC, v:1, k:carro, mode:FULL, rate:100, size:62
 2025-09-29 01:44:18, MOVE, v:1, k:carro, mode:BACK
 2025-09-29 01:46:14, SELF, v:1, k:carro, rate:100, iagen:gpt, alone:9, study:210
+2025-09-29 19:04:39, MOVE, v:1, k:enxugar, mode:PICK
+2025-09-29 19:04:41, EXEC, v:1, k:enxugar, mode:FULL, rate:100
+2025-09-29 19:04:45, MOVE, v:1, k:enxugar, mode:BACK
+2025-09-29 19:04:51, MOVE, v:1, k:toalha, mode:PICK
+2025-09-29 19:04:52, EXEC, v:1, k:toalha, mode:LOCK, rate:0
+2025-09-29 19:09:33, MOVE, v:1, k:toalha, mode:PICK
+2025-09-29 19:09:37, EXEC, v:1, k:toalha, mode:FREE, size:64
+2025-09-29 19:10:24, MOVE, v:1, k:toalha, mode:PICK
+2025-09-29 19:10:26, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:64
+2025-09-29 19:11:13, MOVE, v:1, k:toalha, mode:BACK
+2025-09-29 19:11:51, MOVE, v:1, k:enxugar, mode:PICK
+2025-09-29 19:11:53, EXEC, v:1, k:enxugar, mode:FULL, rate:100
+2025-09-29 19:13:07, MOVE, v:1, k:enxugar, mode:BACK
+2025-09-29 19:15:49, SELF, v:1, k:toalha, rate:100, guide:aula, alone:2, study:130
+2025-09-29 19:17:00, MOVE, v:1, k:calculadora, mode:DOWN
+2025-09-29 19:17:31, MOVE, v:1, k:calculadora, mode:PICK
+2025-09-29 19:18:09, EXEC, v:1, k:calculadora, mode:FULL, rate:0, size:0
+2025-09-29 19:34:13, EXEC, v:1, k:poo, mode:FREE, size:242
+2025-09-29 19:35:29, MOVE, v:1, k:toalha, mode:PICK
+2025-09-29 19:35:31, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:64
+2025-09-29 19:35:33, EXEC, v:1, k:toalha, mode:LOCK, rate:0
+2025-09-29 19:35:54, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:64
+2025-09-29 19:35:54, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:64
