@@ -1,0 +1,6 @@
+2025-10-03 03:30:44, MOVE, v:1, k:toalha, mode:PICK
+2025-10-03 03:30:47, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:62
+2025-10-03 03:30:47, EXEC, v:1, k:toalha, mode:LOCK, rate:0
+2025-10-03 03:31:55, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:65
+2025-10-03 03:32:00, MOVE, v:1, k:toalha, mode:BACK
+2025-10-03 03:36:43, SELF, v:1, k:toalha, rate:100, guide:aula, alone:7, study:170

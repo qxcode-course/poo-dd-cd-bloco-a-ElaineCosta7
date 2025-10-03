@@ -1,32 +1,32 @@
 class Animal:
-    def __init__ (self, species: str, sound: str):
+    def __init__(self, species: str, sound: str):
         self.species: str = species
         self.sound: str = sound
         self.age: int = 0
 
-    def ageBy(self, increment: int) -> None:
+    def ageBy(self, increment) -> None:
         if self.age < 4:
             self.age += increment
-            if self.age > 4:
-                self.age = 4
+        if self.age > 4:
+            self.age = 4
 
     def makeSound(self) -> str:
         if self.age == 0:
             print("---")
-        if self.age == 4:
+        elif self.age == 4:
             print("RIP")
-        if self.age == 1 or self.age == 2 or self.age == 3:
+        elif self.age > 0 or self.age < 4:
             print(self.sound)
+
 
     def __str__(self) -> str:
         return f"{self.species}:{self.age}:{self.sound}"
-
-
+    
 def main():
     animal = Animal("", "")
     while True:
         line: str = input()
-        print("$" + line) # eco
+        print("$" + line)
         args: list[str] = line.split(" ")
         if args[0] == "end":
             break
@@ -44,6 +44,6 @@ def main():
         elif args[0] == "noise":
             animal.makeSound()
         else:
-            print("fail: comando inválido")
+            print("fail: comando invalido")
 
 main()
