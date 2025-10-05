@@ -1,21 +1,8 @@
 class Towel:
-
-    def __init__ (self, color: str, size: str):
+    def __init__(self, color: str, size: str):
         self.color: str = color
         self.size: str = size
         self.wetness: int = 0
-
-    def dry(self, amount: int) -> None:
-        self.wetness += amount
-        if self.wetness >= self.getMaxWetness():
-            print('toalha encharcada')
-            self.wetness = self.getMaxWetness()
-
-    def isDry(self) -> bool:
-        return self.wetness == 0
-
-    def wringOut(self) -> None:
-        self.wetness = 0
 
     def getMaxWetness(self) -> int:
         if self.size == "P":
@@ -26,15 +13,29 @@ class Towel:
             return 30
         return 0
 
-    def __str__ (self) -> str:
+    def dry(self, amount: int) -> None:
+        self.wetness += amount
+        if self.wetness >= self.getMaxWetness():
+            print("toalha encharcada")
+            self.wetness = self.getMaxWetness()
+
+    def wringOut(self) -> None:
+        self.wetness = 0
+
+    def isDry(self) -> bool:
+        return self.wetness == 0
+    
+    def show(self) -> None:
+        print(self)
+
+    def __str__(self) -> str:
         return f"Cor: {self.color}, Tamanho: {self.size}, Umidade: {self.wetness}"
-
-
+    
 def main():
     toalha = Towel("", "")
     while True:
         line: str = input()
-        print ("$" + line)
+        print("$" + line)
         args: list[str] = line.split(" ")
         if args[0] == "end":
             break
@@ -44,16 +45,15 @@ def main():
             toalha = Towel(color, size)
         elif args[0] == "mostrar":
             print(toalha)
+        elif args[0] == "seca":
+            print("sim" if toalha.isDry() else "nao")
         elif args[0] == "enxugar":
             amount: int = int(args[1])
             toalha.dry(amount)
-        elif args[0] == "seca":
-            print('sim' if toalha.isDry() else 'nao')
         elif args[0] == "torcer":
             toalha.wringOut()
         else:
             print("fail: comando invalido")
-
 
 
 main()
